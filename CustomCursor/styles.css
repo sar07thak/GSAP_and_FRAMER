@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* background-color: #111; */
+}
+
+/* body{
+    background-color: #111;
+} */
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cursor{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 8;
+}
+
+#box1{
+    height: 30vw;
+    width: 60vw;
+    background-color: red;
+    position: relative;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10 ;
+}
+
+#box1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
