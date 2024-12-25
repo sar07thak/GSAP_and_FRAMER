@@ -11,4 +11,74 @@ html, body{
 body{
     background-color: #111;
     color: white;
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#nav{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav #left-options{
+    /* border: 1px solid white;  */
+    padding: 10px;
+    font-weight: 600;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: yellow;
+}
+
+#nav #right-options{
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: flex;
+    gap : 100px;
+    /* border: 1px solid white; */
+}
+
+#page1 #hero{
+    /* border: 1px solid white; */
+    height: 85%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translateX(40%); */
+}
+
+#page1 #hero div{
+    font-size: 2vw;
+}
+
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: yellow;    
+    color: black;    
+}
+
+#page2 h1{
+    font-size: 40vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
