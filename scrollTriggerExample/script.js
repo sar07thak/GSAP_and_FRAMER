@@ -51,7 +51,15 @@ tl.from("#website span",{
     stagger: 0.5,
 })
 
-
+// gsap.to("#page1",{
+//     scrollTrigger : {
+//         trigger: "#page1 #hero",
+//         scroller: "body",
+//         markers: true,
+//         start: "top 0%",
+//         end: "top 60%",
+//     }
+// })
 
 gsap.to("#page2 h1",{
     transform: "translateX(-150%)",
@@ -65,3 +73,43 @@ gsap.to("#page2 h1",{
         pin: true,
     }
 })
+
+var cursor = document.querySelector("#cursor");
+
+var body = document.querySelector("body");
+
+
+body.addEventListener("mousemove",(dets)=>{
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
+        duration:0.5,
+        ease:"back.out(2)",
+    })
+})
+
+var box = document.querySelector("#page3 #container #box");     
+
+box.addEventListener("mouseenter",()=>{
+    gsap.to(cursor,{
+        scale:1.8,
+        duration:0.5,
+        ease:"back.out(2)",
+    })
+})
+
+box.addEventListener("mouseleave",()=>{
+    gsap.to(cursor,{
+        scale:.7,
+        duration:0.5,
+        ease:"back.out(2)",
+    })
+})
+
+// gsap.to(box,{
+//     y:100,
+//     scrollTrigger:{
+//         trigger:"#page3",
+//         scroller: "body",
+//         markers: true,
+// })

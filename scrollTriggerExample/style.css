@@ -41,19 +41,26 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
     display: flex;
-    gap : 100px;
+    gap : 50px;
     /* border: 1px solid white; */
 }
 
+#cursor{
+    height: 40px;
+    width: 40px;
+    background-color: #ECE852;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 8;
+}
+
 #page1 #hero{
-    /* border: 1px solid white; */
     height: 85%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform: translateX(40%); */
 }
 
 #page1 #hero div{
@@ -81,4 +88,29 @@ body{
     height: 100%;
     width: 100%;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#page3 #container #box{
+    height: 30vw;
+    width: 60vw;
+    background-color: red;
+    position: relative;
+}
+
+#page3 #container #box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10 ;
+}
+
