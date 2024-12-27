@@ -16,8 +16,73 @@ body{
     width: 100%;
 }
 
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+    margin-bottom: 20vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav #left-options{
+    padding: 10px;
+    font-weight: 600;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: #D8FF04;
+}
+
+#nav #right-options{
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: flex;
+    gap : 50px;
+    font-size: 1.5vw;
+    color: #D8FF04;
+}
+
+.second-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.second-container .left-container{
+    /* border: 1px solid #fff; */
+    height: 40vh;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-container .right-container{
+    /* border: 1px solid #fff; */
+    height: 40vh;
+    padding: 5vw;
+}
+
+.second-container .right-container .ball{
+    height: 6vw;
+    width: 6vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+#page1 .left-container h1{
+    font-size: 6vw;   
+    color:#D8FF04;
+    transform: translatex(-200%);
+}
+
+
+
+
 #page2{
-    background-color: skyblue;
+    background-color: #222;
 }
 
 #move{
